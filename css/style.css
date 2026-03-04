@@ -55,8 +55,8 @@ section {
     padding: 20px;
     margin: 10px;
     border-radius: 12px;
-
     width: 250px;
+    transition: 0.3s ease;
 }
 .feature:hover {
     transform:translateY(-10px);
@@ -65,7 +65,7 @@ section {
 }
 
 .testimonials {
-    background: #fff;
+    background: gray;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -81,6 +81,56 @@ section {
 footer {
     background: #333;
     color: white;
-    text-align: center;
-    padding: 20px;
+    text-align: left;
+    padding: 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.nav-links a{
+    color:#1a73e8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3 ease;
+}
+
+.nav-links a:hover{
+    color:red
+}
+
+.nav-links a.signin{
+    color: white;
+}
+
+.signin{
+    background: black;
+    font: weigth 500px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+}
+.signin:hover{
+    background: #520a8a;    
 }
